@@ -1,0 +1,77 @@
+{
+    "personalData": {
+        "name": "刘宇辉",
+        "age": 21,
+        "gender": "男",
+        "phone": "139-7130-3951",
+        "residence": "湖北大学武昌校区",
+        "e-mail": "emliunix@clojurians.org"
+    },
+    "education": [
+        {
+            "school": "湖北大学",
+            "major": "软件工程",
+            "duratoin": {
+                "from": "2013-09",
+                "to": null
+            }
+        }
+    ],
+    "awards": [
+        {
+            "date": "2015-05",
+            "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+            "award": "全国二等奖 JAVA A组 (个人)"
+        },
+        {
+            "date": "2015-08",
+            "name": "全国大学生信息安全竞赛",
+            "award": "全国三等奖 (小组)",
+            "note": "在小组中作为主力开发与其他三位组员共同开发了基于移动设备的云验证系统。"
+        }
+    ],
+    "experience": [
+        {
+            "company": "武汉东方赛思",
+            "title": "软件开发实习生",
+            "works": "开发实现了SuccezBI在MS Office Word上的插件。",
+            "duration": {
+                "from": "2014-07",
+                "to": "2014-08"
+            }
+        }
+    ],
+    "skills": {
+        "programming": [
+            "JavaScript",
+            "Python",
+            "Java",
+            "Clojure",
+            "Scala"
+        ],
+        "web": [
+            "Vue.js",
+            "Node.js"
+        ],
+        "server": [
+            "Spring",
+            "MyBatis",
+            "Tornado",
+            "Node.js"
+        ],
+        "database": [
+            "MySQL",
+            "PostgreSQL"
+        ],
+        "misc": [
+            "Hadoop",
+            "Spark",
+            "GNU/Linux"
+        ]
+    },
+    "links": [
+        "github://emliunix",
+        "weixin://emliunix",
+        "weibo://liuyhOoQ"
+    ]
+}
