@@ -1,0 +1,250 @@
+@charset "utf-8";
+
+/* fonts */
+@font-face {
+    font-family: "Fangzheng Yundong ultra bold";
+    src: url("./fonts/FZYDTHJW.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Fangzheng Yundong normal";
+    src: url("./fonts/FZYDZHJW.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Fangzheng Youxian normal";
+    src: url("./fonts/FZYXJW.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Fangzheng Lantingkan bold";
+    src: url("./fonts/FZLTKBOLD.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: Monaco;
+    src: url("./fonts/Monaco.ttf") format("truetype");
+}
+
+a.external::before {
+    content: "\f08e";
+    font-family: FontAwesome;
+    font-size: .643rem;
+    display: inline-block;
+    opacity: .5;
+    margin-right: 3px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: inherit;
+}
+
+html, body, div {
+    padding: 0; margin: 0;
+    font-family: "Fangzheng Lantingkan bold", Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Fangzheng Yundong normal", Georgia, 'Times New Roman', Times, serif;
+}
+
+
+/* overall layout */
+
+html {
+    background: #EEE;
+}
+
+.resume {
+    width: 960px;
+    min-width: 960px;
+    height: 1360px;
+    min-height: 1360px;
+    margin: 30px auto 100px;
+
+    background: #FFF;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media print {
+    .resume {
+        box-shadow: none;
+        margin: auto;
+    }
+}
+
+.resume > .sidebar, .resume > .sections {
+    float: left;
+    box-sizing: border-box;
+}
+
+.resume > .sidebar {
+    width: 400px;
+    height: 1360px;
+}
+
+.resume > .sections {
+    width: 560px;
+    height: 1360px;
+}
+
+/* sidebar */
+
+.resume > .sidebar {
+    padding: 40px;
+    padding-top: 100px;
+    background-color: #80deea;
+}
+
+.sidebar > .avatar {
+    position: relative;
+    box-sizing: border-box;
+    width: 250px; height: 250px;
+    margin: 0px auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.avatar > img {
+    width: 250px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.basicinfo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.basicinfo > .name {
+    font-family: "Fangzheng Yundong normal", Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px;
+    letter-spacing: 5px;
+}
+
+.basicinfo a:link {
+    text-decoration: none;
+}
+
+.basicinfo .subinfo a:link, .basicinfo .subinfo a:visited, .basicinfo .subinfo {
+    font-weight: bold;
+    color: #333;
+}
+
+.extrainfo .info-list-item {
+    font-family: Monaco, "Fangzheng Lantingkan bold", Arial, Helvetica, sans-serif;
+    background: #FFF;
+    padding: .1em .3em;
+    margin: .1em .2em;
+    border-radius: .4em;
+    display: inline-block;
+}
+
+.extrainfo .info-h1 {
+    font-size: 20px;
+    font-family: "Fangzheng Yundong normal", Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+.extrainfo .info-lv1 {
+    margin-top: 30px;
+}
+
+.extrainfo .info.info-lv2 {
+    margin-left: 10px;
+}
+
+.extrainfo .info .info-prop > b {
+    display: inline-block;
+    min-width: 5em;
+}
+
+/* sections */
+
+.sections {
+    padding: 40px;
+    padding-top: 100px;
+}
+
+.section > header > h2 {
+    font-size: 24px;
+    letter-spacing: 3px;
+    margin: 20px auto 7px;
+    color: #00838F;
+}
+
+/*
+使用 flexbox，所以不用清除浮动了
+.history-section .item::after {
+    display: block;
+    content: ', ';
+    visibility: hidden;
+    height: 0px;
+    clear: both;
+}*/
+/*.history-section .item > .item-date, .history-section .item > .item-content {
+    float: left;
+}*/
+
+.history-section .item {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.history-section .item > .item-date {
+    font-family: inherit;
+    flex-shrink: 1;
+    text-align: right;
+    padding-right: 10px;
+    margin: 0;
+    white-space: pre;
+}
+
+.item > .item-content {
+    flex-grow: 10;
+}
+
+.item > .item-content > .item-main {
+    font-weight: bolder;
+}
+
+.item > .item-content > .item-sub {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.item > .item-content > .item-note {
+    text-indent: 2em;
+}
+
+.text-section > p.text, .text-section > .text > p {
+    text-indent: 2em;
+    margin: .5em auto;
+}
+
+.text-section .text b {
+    background: #fff59d;
+    border-radius: .3em;
+    padding: .05em .2em;
+}
+
+/* about */
+
+.sections {
+    position: relative;
+}
+
+.about {
+    width: 480px;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    color: #555;
+    padding-bottom: 10px;
+}

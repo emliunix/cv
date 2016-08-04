@@ -1,0 +1,11 @@
+<!--
+    props: date:string main sub note:optional
+-->
+<div class="item">
+    <div class="item-date">{{date}}</div>
+    <div class="item-content">
+        <div class="item-main">{{{main}}}</div>
+        <div class="item-sub">{{sub}}</div>
+        <div class="item-note" v-if="note">{{{note}}}</div>
+    </div>
+</div>

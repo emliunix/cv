@@ -1,0 +1,116 @@
+{
+    "sidebar": {
+        "avatarsrc": "./assets/th.jpg",
+        "basic": {
+            "name": "刘宇辉",
+            "phone": "139-7130-3951",
+            "email": "emliunix@clojurians.org",
+            "github": "github://emliunix"
+        },
+        "extra": [
+            {
+                "type": "dir",
+                "title": "个人信息",
+                "data": [
+                    {
+                        "type": "prop",
+                        "title": "年龄",
+                        "data": 21
+                    },{
+                        "type": "prop",
+                        "title": "性别",
+                        "data": "男"
+                    },{
+                        "type": "prop",
+                        "title": "居住地",
+                        "data": "湖北大学武昌校区"
+                    }
+                ]
+            },{
+                "type": "dir",
+                "title": "技能信息",
+                "data": [
+                    {
+                        "type": "list",
+                        "title": "编程语言",
+                        "data": [
+                            "Python",
+                            "Clojure",
+                            "Java",
+                            "JavaScript",
+                            "C/C++",
+                            "C#"
+                        ]
+                    },{
+                        "type": "list",
+                        "title": "web",
+                        "data": [
+                            "Twisted",
+                            "Tornado",
+                            "Vue.js",
+                            "Node.js",
+                            "Spring",
+                            "MyBatis"
+                        ]
+                    },{
+                        "type": "list",
+                        "title": "其他",
+                        "data": [
+                            "Hadoop/Spark",
+                            "GNU/Linux",
+                            "以及其他技能，无法一一列出"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "sections": [
+        {
+            "type": "history",
+            "title": "工作经历",
+            "items": [
+                {
+                    "date": "2014-07 ~ 2014-08",
+                    "main": "<a class='external' href='http://www.succez.com/'>武汉东方赛思</a>",
+                    "sub": "实习研发工程师",
+                    "note": "实习期间在研发组组长的指导下，独立设计并编码实现了该公司BI系统的Office报表插件。该插件基于.Net，使用C#开发。"
+                }
+            ]
+        },{
+            "type": "history",
+            "title": "教育经历",
+            "items": [
+                {
+                    "date": "2013-09 ~ 2017-06",
+                    "main": "湖北大学",
+                    "sub": "软件工程专业本科",
+                    "note": "在校期间多次参与校级以及国家级竞赛，并取得一些成绩。同时积极参与到本专业实验室的各个项目中，积累了大量Web程序开发，分布式Hadoop/Spark集群的搭建与使用经验。"
+                }
+            ]
+        },{
+            "type": "history",
+            "title": "竞赛经历",
+            "items": [
+                {
+                    "date": "2015-05",
+                    "main": "蓝桥杯全国软件和信息技术专业人才大赛",
+                    "sub": "全国二等奖 Java A组 (个人)"
+                },{
+                    "date": "2015-08",
+                    "main": "全国大学生信息安全竞赛",
+                    "sub": "全国三等奖 (小组)",
+                    "note": "在这个比赛中，我们小组通过移动设备实现了一个双重要素身份验证的独立平台。"
+                }
+            ]
+        },{
+            "type": "text",
+            "title": "个人简介",
+            "text": "<p>在初中时期，第一次在个人电脑上成功装上Redhat系统，从此走上不归路。</p><p>大一暑假期间有幸在东方赛思进行过两个月的<b>实习</b>，期间在研发组长的带领下独立设计编码实现该公司BI系统的Office报表插件。后因学业压力，无法有效工作，退出了实习。</p><p>平时喜欢关注行业中前沿的技术发展，在早期便关注<b>Docker</b>，云计算相关的技术，经常使用Docker打包运行各种应用。在其基础上搭建Spark/Hadoop集群进行过一些<b>数据分析算法</b>的编写。</p><p>有较多的编码经验，在每各个课程项目中都作为主力开发，参与过多个实验室项目。在编码过程中，不满足于现状，探索过包括FP在内的多种编程的范式。追求以更优雅的方式实现功能。专门探索过基于消息环，线程池，协程的<b>异步编程</b>的异同以及在Browser，Nodejs，Twisted中的实现。</p><p>段位塑料，求带。</p>"
+        },{
+            "type": "text",
+            "title": "求职目标",
+            "text": "Python或其他后台开发相关职位"
+        }
+    ]
+}

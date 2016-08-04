@@ -1,0 +1,15 @@
+<!--
+    props: sidebar sections:[section]
+-->
+<div class="resume">
+    <sidebar :avatarsrc="sidebar.avatarsrc" :basic="sidebar.basic" :extra="sidebar.extra"></sidebar>
+    <div class="sections">
+        <div class="section-wrapper" v-for="section in sections">
+            <history-section v-if="section.type==='history'" :title="section.title" :items="section.items"></history-section>
+            <text-section v-else :title="section.title" :text="section.text"></text-section>
+        </div>
+        <div class="about">
+            该简历使用<span class="highlight">Vue.js</span>编写。简历github地址<br><a class="external" href="https://github.com/emliunix/cv/tree/master/html">github.com/emliunix/cv/tree/master/html</a>。
+        </div>
+    </div>
+</div>

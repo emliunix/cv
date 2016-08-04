@@ -1,0 +1,16 @@
+<!--
+    props: title data level
+    computed: type
+    type: prop when data is simple string or number,
+          otherwise dir(Array). It's invalid to be
+          of object type.
+-->
+<div class="info info-lv{{level}}">
+    <div class="info-wrapper" v-if="type==='dir'">
+        <header class="info-h{{level}}" v-if="title"><span>{{title}}</span></header>
+        <info v-for="d in data" :title="d.title" :type="d.type" :data="d.data" :level="level + 1"></info>
+    </div>
+    <div class="info-wrapper" v-else>
+        <div class="info-prop"><b>{{title}}</b><br v-if="type==='list'">{{{display}}}</div>
+    </div>
+</div>

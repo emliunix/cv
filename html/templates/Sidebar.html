@@ -1,0 +1,8 @@
+<!--
+    props: avatarsrc:string basic:basic extra:extra
+-->
+<div class="sidebar">
+    <avatar :imgsrc="avatarsrc"></avatar>
+    <basic-info v-if="basic" :name="basic.name" :phone="basic.phone" :email="basic.email" :github="basic.github"></basic-info>
+    <extra-info :data="extra"></extra-info>
+</div>
